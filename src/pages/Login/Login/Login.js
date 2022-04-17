@@ -7,7 +7,6 @@ const Login = () => {
   return (
     <div className='container login-container'>
       <SocialLogin />
-
       <div className='login-form'>
         <Form>
           <Form.Group className='mb-3' controlId='formBasicEmail'>

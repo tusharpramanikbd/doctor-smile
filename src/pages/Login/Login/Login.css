@@ -1,6 +1,5 @@
 .login-container {
   text-align: center;
-  /* background: turquoise; */
   min-height: calc(100vh - 56px);
 }
 .login-form {

@@ -1,0 +1,20 @@
+.signup-container {
+  text-align: center;
+  min-height: calc(100vh - 56px);
+}
+
+.signup-form {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: start;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .signup-form {
+    width: 80%;
+  }
+}
