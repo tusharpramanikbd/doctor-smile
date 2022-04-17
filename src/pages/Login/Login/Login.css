@@ -1,5 +1,20 @@
 .login-container {
   text-align: center;
-  background: turquoise;
+  /* background: turquoise; */
   min-height: calc(100vh - 56px);
+}
+.login-form {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: start;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .login-form {
+    width: 80%;
+  }
 }
