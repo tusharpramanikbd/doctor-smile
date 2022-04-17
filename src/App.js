@@ -5,8 +5,8 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Blogs from './pages/Blogs/Blogs'
 import Checkout from './pages/Checkout/Checkout'
-import Login from './pages/Login/Login'
-import Signup from './pages/Signup/Signup'
+import Login from './pages/Login/Login/Login'
+import Signup from './pages/Login/Signup/Signup'
 import NotFound from './pages/NotFound/NotFound'
 
 function App() {

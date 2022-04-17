@@ -1,0 +1,22 @@
+.btn-social {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin: 4rem 0 3rem 0;
+}
+
+.horizontal-line {
+  width: 25%;
+  height: 1px;
+  background-color: darkgray;
+}
+
+.horizontal-line-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: center;
+}
+.horizontal-line-container p {
+  margin-top: 15px;
+}
