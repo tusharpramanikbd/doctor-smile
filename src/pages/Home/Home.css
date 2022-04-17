@@ -1,16 +1,1 @@
-.carousel-img {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-.carousel-container {
-  border-radius: 10px;
-  text-align: center;
-  padding: 2rem;
-  background-color: rgb(247, 244, 244);
-  border: 1px solid rgb(187, 187, 187);
-}
-.carousel-container p {
-  color: black;
-}
+

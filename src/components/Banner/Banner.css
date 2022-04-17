@@ -15,8 +15,8 @@ header {
 .banner-container h1 {
   color: goldenrod;
 }
-.banner-container h2,
-p {
+.banner-container > h2,
+.banner-container > p {
   color: whitesmoke;
 }
 .banner-container a {

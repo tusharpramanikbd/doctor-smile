@@ -8,6 +8,7 @@ import Checkout from './pages/Checkout/Checkout'
 import Login from './pages/Login/Login/Login'
 import Signup from './pages/Login/Signup/Signup'
 import NotFound from './pages/NotFound/NotFound'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
