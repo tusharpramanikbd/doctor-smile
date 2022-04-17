@@ -12,6 +12,16 @@
   margin-top: 1.5rem;
 }
 
+.signup-toggle {
+  margin-top: 1rem;
+}
+
+.signup-toggle span {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
   .login-form {
     width: 80%;
