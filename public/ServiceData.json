@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Teeth Whitening",
+    "image": "https://img.freepik.com/free-photo/patient-red-glasses-sits-chair-dentist-office-while-doctor-whiten-her-teeth_8353-1665.jpg?w=740",
+    "price": 450,
+    "desc": "Stained teeth can make you look and feel older and less confident. We offer powerful professional teeth whitening treatments at your favorite Doctor Smile."
+  },
+  {
+    "id": 2,
+    "name": "Implants",
+    "image": "https://img.freepik.com/free-photo/young-man-with-toothy-smile-demonstrating-his-dental-implant_259150-57670.jpg?w=740",
+    "price": 500,
+    "desc": "At Doctor Smile, we make the dental implant process the easiest experience. Our experts have placed thousands of long-lasting dental implants with great results."
+  },
+  {
+    "id": 3,
+    "name": "Crowns",
+    "image": "https://img.freepik.com/free-vector/dental-implants-anatomy-closeup-model_1284-15064.jpg?w=740",
+    "price": 600,
+    "desc": "A ceramic dental crown protects weak, so they can continue functioning for years. There are a few situations where our dentist might recommend a dental crown."
+  }
+]
