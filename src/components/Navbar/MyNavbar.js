@@ -1,5 +1,7 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
+import './MyNavbar.css'
 
 const MyNavbar = () => {
   return (
@@ -9,12 +11,77 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
-            <Nav.Link href='#home'>Home</Nav.Link>
-            <Nav.Link href='#checkout'>Checkout</Nav.Link>
-            <Nav.Link href='#blogs'>Blogs</Nav.Link>
-            <Nav.Link href='#about'>About</Nav.Link>
-            <Nav.Link href='#patient_login'>Patient Login</Nav.Link>
-            <Nav.Link href='#new_patient'>New Patient?</Nav.Link>
+            <NavLink
+              className='navbar-links'
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? 'white' : '',
+                }
+              }}
+              to='/'
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              className='navbar-links'
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? 'white' : '',
+                }
+              }}
+              to='/checkout'
+            >
+              Checkout
+            </NavLink>
+
+            <NavLink
+              className='navbar-links'
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? 'white' : '',
+                }
+              }}
+              to='/blogs'
+            >
+              Blogs
+            </NavLink>
+
+            <NavLink
+              className='navbar-links'
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? 'white' : '',
+                }
+              }}
+              to='/about'
+            >
+              About
+            </NavLink>
+
+            <NavLink
+              className='navbar-links'
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? 'white' : '',
+                }
+              }}
+              to='/login'
+            >
+              Patient Login
+            </NavLink>
+
+            <NavLink
+              className='navbar-links'
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? 'white' : '',
+                }
+              }}
+              to='/signup'
+            >
+              New Patient?
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
