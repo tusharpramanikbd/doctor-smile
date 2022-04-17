@@ -1,9 +1,16 @@
+import { signOut } from 'firebase/auth'
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
+import { useAuthState } from 'react-firebase-hooks/auth'
 import { NavLink } from 'react-router-dom'
+import auth from '../../firebase.init'
 import './MyNavbar.css'
 
 const MyNavbar = () => {
+  const [user, loading, error] = useAuthState(auth)
+  const handleSignout = () => {
+    signOut(auth)
+  }
   return (
     <Navbar bg='dark' expand='lg' variant='dark'>
       <Container>
@@ -59,29 +66,37 @@ const MyNavbar = () => {
               About
             </NavLink>
 
-            <NavLink
-              className='navbar-links'
-              style={({ isActive }) => {
-                return {
-                  color: isActive ? 'white' : '',
-                }
-              }}
-              to='/login'
-            >
-              Patient Login
-            </NavLink>
+            {user ? (
+              <button onClick={handleSignout} className='btn-signout'>
+                Signout
+              </button>
+            ) : (
+              <Nav>
+                <NavLink
+                  className='navbar-links'
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? 'white' : '',
+                    }
+                  }}
+                  to='/login'
+                >
+                  Patient Login
+                </NavLink>
 
-            <NavLink
-              className='navbar-links'
-              style={({ isActive }) => {
-                return {
-                  color: isActive ? 'white' : '',
-                }
-              }}
-              to='/signup'
-            >
-              New Patient?
-            </NavLink>
+                <NavLink
+                  className='navbar-links'
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? 'white' : '',
+                    }
+                  }}
+                  to='/signup'
+                >
+                  New Patient?
+                </NavLink>
+              </Nav>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
