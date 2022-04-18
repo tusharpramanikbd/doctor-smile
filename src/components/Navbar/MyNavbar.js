@@ -2,19 +2,28 @@ import { signOut } from 'firebase/auth'
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { useAuthState } from 'react-firebase-hooks/auth'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import auth from '../../firebase.init'
 import './MyNavbar.css'
 
 const MyNavbar = () => {
   const [user, loading, error] = useAuthState(auth)
+  const navigate = useNavigate()
   const handleSignout = () => {
     signOut(auth)
   }
   return (
     <Navbar bg='dark' expand='lg' variant='dark'>
       <Container>
-        <Navbar.Brand href='#home'>Doctor Smile</Navbar.Brand>
+        <Navbar.Brand
+          href=''
+          onClick={() => {
+            navigate('/')
+          }}
+          style={{ cursor: 'pointer' }}
+        >
+          Doctor Smile
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
