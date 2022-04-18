@@ -28,8 +28,11 @@ const Signup = () => {
     const email = event.target.email.value
     const password = event.target.password.value
 
+    // first create user with email and password and wait for return
     await createUserWithEmailAndPassword(email, password)
+    // Then update profile with name and wait for return
     await updateProfile({ displayName: name })
+    // Then sign out so that after signup user does not get automatically signed in.
     signOut(auth)
     navigate('/login')
   }
