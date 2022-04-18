@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { useLocation, useNavigate } from 'react-router-dom'
+import Loading from '../../../components/Loading/Loading'
 import auth from '../../../firebase.init'
 import SocialLogin from '../SocialLogin/SocialLogin'
 import './Login.css'
@@ -24,6 +25,14 @@ const Login = () => {
 
   const navigateToSignup = () => {
     navigate('/signup')
+  }
+
+  const navigateToForgotPassword = () => {
+    navigate('/forgotpassword')
+  }
+
+  if (loading) {
+    return <Loading />
   }
 
   if (user) {
@@ -65,6 +74,10 @@ const Login = () => {
         <p className='signup-toggle'>
           Don't have an account?{' '}
           <span onClick={navigateToSignup}>Please Signup</span>
+        </p>
+        <p className='reset-password'>
+          Forgot Password?{' '}
+          <span onClick={navigateToForgotPassword}>Reset Password</span>
         </p>
       </div>
     </div>

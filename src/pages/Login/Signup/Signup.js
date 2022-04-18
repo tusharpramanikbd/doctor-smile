@@ -7,6 +7,7 @@ import {
   useUpdateProfile,
 } from 'react-firebase-hooks/auth'
 import { useNavigate } from 'react-router-dom'
+import Loading from '../../../components/Loading/Loading'
 import auth from '../../../firebase.init'
 import SocialLogin from '../SocialLogin/SocialLogin'
 import './Signup.css'
@@ -35,6 +36,10 @@ const Signup = () => {
 
   const navigateToLogin = () => {
     navigate('/login')
+  }
+
+  if (loading || updating) {
+    return <Loading />
   }
 
   if (userError || updateError) {

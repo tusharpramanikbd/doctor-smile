@@ -12,11 +12,13 @@
   margin-top: 1.5rem;
 }
 
-.signup-toggle {
+.signup-toggle,
+.reset-password {
   margin-top: 1rem;
 }
 
-.signup-toggle span {
+.signup-toggle span,
+.reset-password span {
   color: blue;
   text-decoration: underline;
   cursor: pointer;
