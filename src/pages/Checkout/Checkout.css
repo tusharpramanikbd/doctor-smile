@@ -1,0 +1,16 @@
+.checkout-container {
+  min-height: calc(100vh - 56px);
+}
+.checkout-form {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 992px) {
+  .checkout-form {
+    width: 80%;
+  }
+}
