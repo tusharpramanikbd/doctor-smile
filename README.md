@@ -1,3 +1,27 @@
+# Website Name: Doctor Smile
+
+Live Link: https://doctor-smile-app-9f0d2.web.app/
+
+## Features and Functionality
+
+- This is a dentist service website where you can book for various services.
+- You can create account with email and password and verify email else you can signin with google.
+- You can login with your email and password.
+- You can reset your password if you forgot.
+- You can not book for services if you are not logged in.
+- The whole website is responsive.
+
+## Used Technologies
+
+- ReactJS
+- HTML5
+- CSS3
+- Google Firebase
+- React Bootstrap
+- React Firebase Hooks
+- React Toastify
+- React Router
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
