@@ -1,13 +1,15 @@
 import React from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import auth from '../../../firebase.init'
 import SocialLogin from '../SocialLogin/SocialLogin'
 import './Login.css'
 
 const Login = () => {
   const navigate = useNavigate()
+  const location = useLocation()
+  const from = location.state?.from?.pathname || '/'
   let errorElement
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth)
@@ -25,7 +27,7 @@ const Login = () => {
   }
 
   if (user) {
-    navigate('/')
+    navigate(from, { replace: true })
   }
 
   if (error) {
