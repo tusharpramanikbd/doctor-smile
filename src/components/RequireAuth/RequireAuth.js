@@ -11,6 +11,7 @@ const RequireAuth = ({ children }) => {
     return <Loading />
   }
   if (!user) {
+    // If user is not present navigate to login page
     return <Navigate to='/login' state={{ from: location }} replace />
   }
   return children

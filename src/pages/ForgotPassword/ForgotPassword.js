@@ -21,6 +21,7 @@ const ForgotPassword = () => {
     event.preventDefault()
     const email = event.target.email.value
     if (email) {
+      // if email is present then sent password reset email and then toast
       await sendPasswordResetEmail(email)
       toast('Sent email')
     } else {

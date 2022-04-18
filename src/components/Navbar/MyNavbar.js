@@ -66,6 +66,8 @@ const MyNavbar = () => {
               About
             </NavLink>
 
+            {/* Conditional rendering */}
+            {/* If the use is present only signout button will be visible */}
             {user ? (
               <button onClick={handleSignout} className='btn-signout'>
                 Signout

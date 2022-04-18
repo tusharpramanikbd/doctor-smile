@@ -10,6 +10,7 @@ import './Login.css'
 const Login = () => {
   const navigate = useNavigate()
   const location = useLocation()
+  // if location has pathname then go to there otherwise home
   const from = location.state?.from?.pathname || '/'
   let errorElement
   const [signInWithEmailAndPassword, user, loading, error] =
