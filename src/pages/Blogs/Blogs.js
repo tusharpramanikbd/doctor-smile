@@ -1,8 +1,9 @@
 import React from 'react'
+import './Blogs.css'
 
 const Blogs = () => {
   return (
-    <div className='container'>
+    <div className='container blogs-container'>
       <h2 className='mt-5'>
         Difference between authorization and authentication?
       </h2>

@@ -1,0 +1,15 @@
+.about-container {
+  min-height: calc(100vh - 56px);
+  text-align: center;
+}
+.about-img {
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: block;
+  width: 50%;
+}
+.about-name,
+.about-text {
+  margin-top: 1rem;
+}
